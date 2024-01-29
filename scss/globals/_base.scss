@@ -1,0 +1,21 @@
+@use "../utilities" as u;
+body {
+	font-family: u.$fontFamily;
+	color: var(--text);
+}
+._container {
+	width: min(100% - 0.75rem, 53.5rem);
+
+	margin-inline: auto;
+
+	@include u.breakpoint-down(TABLET) {
+		width: min(100% - 0.75rem, 46.875rem);
+	}
+	@include u.breakpoint-down(MOBILE) {
+		width: 100%;
+		padding: 0 0.75rem;
+	}
+}
+.main {
+	flex: 1 1 auto;
+}
