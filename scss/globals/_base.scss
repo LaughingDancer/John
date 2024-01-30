@@ -2,20 +2,34 @@
 body {
 	font-family: u.$fontFamily;
 	color: var(--text);
+	&._lock {
+		overflow: hidden;
+	}
 }
 ._container {
-	width: min(100% - 0.75rem, 53.5rem);
-
+	width: min(100% - 12px, 856px);
 	margin-inline: auto;
 
 	@include u.breakpoint-down(TABLET) {
-		width: min(100% - 0.75rem, 46.875rem);
+		width: min(100% - 12px, 750px);
 	}
 	@include u.breakpoint-down(MOBILE) {
 		width: 100%;
-		padding: 0 0.75rem;
+		padding: 0 12px;
 	}
 }
 .main {
+	padding: 5.625rem 0rem 0rem 0rem;
 	flex: 1 1 auto;
+	@include u.breakpoint-down(MOBILE) {
+		padding: 1.5rem 0rem 0rem 0rem;
+	}
+}
+.title {
+	font-size: 2.75rem;
+	font-weight: 700;
+	line-height: 136%;
+}
+.text {
+	line-height: 150%;
 }
