@@ -29,7 +29,19 @@ body {
 	font-size: 2.75rem;
 	font-weight: 700;
 	line-height: 136%;
+	@include u.breakpoint-down(MOBILE) {
+		font-size: 1.875rem;
+		line-height: 200%;
+	}
 }
 .text {
 	line-height: 150%;
+}
+.title-a {
+	font-size: 1.375rem;
+	line-height: 272.727%;
+	@include u.breakpoint-down(MOBILE) {
+		font-size: 1.125rem;
+		line-height: 333.333%;
+	}
 }
