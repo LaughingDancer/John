@@ -6,9 +6,6 @@
 	@include u.breakpoint-down(MOBILE) {
 		padding: 0rem 0rem 2.375rem 0rem;
 	}
-	&__container {
-	}
-
 	&__header {
 		display: flex;
 		justify-content: space-between;
@@ -18,10 +15,6 @@
 			justify-content: center;
 		}
 	}
-
-	&__title {
-	}
-
 	&__view-all {
 		color: var(--blue);
 		flex: 0 0 auto;
@@ -96,7 +89,5 @@
 			margin: 0rem 0rem 1.1875rem 0rem;
 			font-size: 1rem;
 		}
-	}
-	&__text {
 	}
 }
