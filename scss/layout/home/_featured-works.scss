@@ -63,6 +63,7 @@
 	&__title {
 		margin: 0rem 0rem 1.5rem 0rem;
 		font-weight: 700;
+		display: inline-block;
 		@include u.breakpoint-down(MOBILE) {
 			margin: 0rem 0rem 1rem 0rem;
 		}
@@ -101,5 +102,11 @@
 		@include u.breakpoint-down(MOBILE) {
 			font-size: 1rem;
 		}
+	}
+}
+.works__items {
+	padding: 0rem 0rem 3.75rem 0rem;
+	@include u.breakpoint-down(MOBILE) {
+		padding: 0rem 0rem 1.875rem 0rem;
 	}
 }

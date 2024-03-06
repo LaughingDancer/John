@@ -4,14 +4,6 @@
 	@include u.breakpoint-down(SMALL_MOBILE) {
 		padding: 0rem 0rem 1.875rem 0rem;
 	}
-	&__container {
-	}
-
-	&__title {
-		@include u.breakpoint-up(MOBILE) {
-			margin: 0rem 0rem 3.125rem 0rem;
-		}
-	}
 
 	&__items {
 		display: flex;
@@ -43,13 +35,7 @@
 		}
 	}
 
-	&__date {
-	}
-
 	&__category {
 		color: var(--subtitle);
-	}
-
-	&__text {
 	}
 }

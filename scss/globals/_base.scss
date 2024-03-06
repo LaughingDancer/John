@@ -43,6 +43,9 @@ a {
 		line-height: 200%;
 		margin-bottom: 1.25rem;
 	}
+	@include u.breakpoint-up(MOBILE) {
+		margin: 0rem 0rem 3.125rem 0rem;
+	}
 }
 .text {
 	line-height: 150%;
