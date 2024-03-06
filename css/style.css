@@ -695,6 +695,10 @@ a {
     padding: 0rem 0rem 1.875rem 0rem;
   }
 }
+.blog__container {
+  width: min(100% - 12px, 681px);
+  margin-inline: auto;
+}
 .blog__items {
   display: flex;
   flex-direction: column;
@@ -725,4 +729,109 @@ a {
 }
 .blog__category {
   color: var(--subtitle);
+}
+
+.article {
+  padding-bottom: 1.6875rem;
+}
+.article_title {
+  font-size: 2.125rem;
+  font-weight: 700;
+  line-height: 147%;
+  max-width: 31.5625rem;
+}
+@media (max-width: 47.9988em) {
+  .article_title {
+    font-size: 1.875rem;
+    line-height: 133%;
+    margin-bottom: 1.25rem;
+  }
+}
+@media (min-width: 47.9988em) {
+  .article_title {
+    margin: 0rem 0rem 1.875rem 0rem;
+  }
+}
+.article__container {
+  width: min(100% - 12px, 681px);
+  margin-inline: auto;
+}
+.article__suptitle {
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 200%;
+}
+@media (max-width: 47.9988em) {
+  .article__suptitle {
+    font-size: 1.625rem;
+  }
+}
+.article__suptitle_h3 {
+  font-size: 1.5rem;
+  line-height: 250%;
+}
+@media (max-width: 47.9988em) {
+  .article__suptitle_h3 {
+    font-size: 1.25rem;
+  }
+}
+.article__items {
+  display: flex;
+  flex-direction: column;
+  gap: 3.375rem;
+}
+@media (max-width: 47.9988em) {
+  .article__items {
+    gap: 1.4375rem;
+  }
+}
+.article__body {
+  max-width: 42.5rem;
+}
+.article__info {
+  display: flex;
+  align-items: center;
+  gap: 1.625rem;
+  margin: 0rem 0rem 1.375rem 0rem;
+}
+.article__year {
+  color: var(--white);
+  background-color: var(--pink);
+  display: inline-flex;
+  font-size: 1.125rem;
+  font-weight: 900;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 1.5625rem;
+  padding: 0rem 0.625rem;
+}
+@media (max-width: 47.9988em) {
+  .article__year {
+    font-size: 1rem;
+    padding: 0.4375rem 0.75rem;
+  }
+}
+.article__category {
+  font-size: 1.25rem;
+}
+@media (max-width: 47.9988em) {
+  .article__category {
+    font-size: 1rem;
+  }
+}
+.article__text {
+  margin: 0rem 0rem 2.875rem 0rem;
+}
+@media (max-width: 47.9988em) {
+  .article__text {
+    margin: 0rem 0rem 1.4375rem 0rem;
+  }
+}
+.article__image {
+  max-width: 100%;
+  margin: 0rem 0rem 1.5625rem 0rem;
+}
+.article__image:last-child {
+  margin: 0rem 0rem 0rem 0rem;
 }/*# sourceMappingURL=style.css.map */

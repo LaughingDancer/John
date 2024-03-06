@@ -4,7 +4,10 @@
 	@include u.breakpoint-down(SMALL_MOBILE) {
 		padding: 0rem 0rem 1.875rem 0rem;
 	}
-
+	&__container {
+		width: min(100% - 12px, 681px);
+		margin-inline: auto;
+	}
 	&__items {
 		display: flex;
 		flex-direction: column;
