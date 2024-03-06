@@ -48,7 +48,9 @@
 		font-weight: 500;
 		color: var(--black);
 		transition: color 0.5s ease 0s;
-
+		&._activeLink {
+			color: var(--pink);
+		}
 		@include u.breakpoint-up(TABLET) {
 			&:hover {
 				color: var(--pink);

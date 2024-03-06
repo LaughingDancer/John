@@ -6,6 +6,9 @@ body {
 		overflow: hidden;
 	}
 }
+a {
+	color: inherit;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -38,6 +41,7 @@ body {
 	@include u.breakpoint-down(MOBILE) {
 		font-size: 1.875rem;
 		line-height: 200%;
+		margin-bottom: 1.25rem;
 	}
 }
 .text {
@@ -53,11 +57,16 @@ body {
 }
 .title-h3 {
 	font-size: 1.875rem;
-	font-weight: 700;
-	// line-height: 146%;
+	line-height: 146%;
+	transition: color 0.5s ease 0s;
 	@include u.breakpoint-down(MOBILE) {
 		font-size: 1.5rem;
 		line-height: 125%;
+	}
+	@include u.breakpoint-up(TABLET) {
+		&:hover {
+			color: var(--pink);
+		}
 	}
 }
 ._ibg {

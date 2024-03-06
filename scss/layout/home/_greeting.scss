@@ -29,11 +29,12 @@
 	}
 
 	&__title {
-		margin: 0 0 1.875rem 0;
 		@include u.breakpoint-down(MOBILE) {
-			margin: 0 0 1.3125rem 0;
 			font-size: 2rem;
 			line-height: 125%;
+		}
+		@include u.breakpoint-up(MOBILE) {
+			margin: 0 0 1.875rem 0;
 		}
 	}
 

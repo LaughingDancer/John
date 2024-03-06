@@ -100,6 +100,7 @@ h6 {
   --bgc-years-page: hsl(0, 100%, 74%);
   --subtitle: hsl(210, 14%, 58%);
   --shadow-posts: hsla(204, 86%, 86%, 0.25);
+  --border-bottom: hsl(0, 0%, 88%);
 }
 
 @font-face {
@@ -148,6 +149,10 @@ body._lock {
   overflow: hidden;
 }
 
+a {
+  color: inherit;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -190,6 +195,7 @@ body._lock {
   .title {
     font-size: 1.875rem;
     line-height: 200%;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -210,12 +216,18 @@ body._lock {
 
 .title-h3 {
   font-size: 1.875rem;
-  font-weight: 700;
+  line-height: 146%;
+  transition: color 0.5s ease 0s;
 }
 @media (max-width: 47.9988em) {
   .title-h3 {
     font-size: 1.5rem;
     line-height: 125%;
+  }
+}
+@media (min-width: 61.9988em) {
+  .title-h3:hover {
+    color: var(--pink);
   }
 }
 
@@ -282,6 +294,9 @@ body._lock {
   font-weight: 500;
   color: var(--black);
   transition: color 0.5s ease 0s;
+}
+.menu__link._activeLink {
+  color: var(--pink);
 }
 @media (min-width: 61.9988em) {
   .menu__link:hover {
@@ -391,14 +406,15 @@ body._lock {
     padding: 0 0.75rem 0;
   }
 }
-.greeting__title {
-  margin: 0 0 1.875rem 0;
-}
 @media (max-width: 47.9988em) {
   .greeting__title {
-    margin: 0 0 1.3125rem 0;
     font-size: 2rem;
     line-height: 125%;
+  }
+}
+@media (min-width: 47.9988em) {
+  .greeting__title {
+    margin: 0 0 1.875rem 0;
   }
 }
 .greeting__text {
@@ -573,7 +589,7 @@ body._lock {
 }
 
 .works__item {
-  border-bottom: 1px solid rgb(224, 224, 224);
+  border-bottom: 1px solid var(--border-bottom);
   padding: 0rem 0rem 1.875rem 0rem;
   margin: 0rem 0rem 1.875rem 0rem;
 }
@@ -610,6 +626,7 @@ body._lock {
 }
 .works__title {
   margin: 0rem 0rem 1.5rem 0rem;
+  font-weight: 700;
 }
 @media (max-width: 47.9988em) {
   .works__title {
@@ -653,4 +670,49 @@ body._lock {
   .works__category {
     font-size: 1rem;
   }
+}
+
+.blog {
+  padding: 0rem 0rem 3.3125rem 0rem;
+}
+@media (max-width: 29.9988em) {
+  .blog {
+    padding: 0rem 0rem 1.875rem 0rem;
+  }
+}
+@media (min-width: 47.9988em) {
+  .blog__title {
+    margin: 0rem 0rem 3.125rem 0rem;
+  }
+}
+.blog__items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.blog__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  padding: 0rem 0rem 1.8125rem 0rem;
+  border-bottom: 1px solid var(--border-bottom);
+  max-width: 42.625rem;
+}
+.blog__name {
+  font-weight: 500;
+}
+.blog__info {
+  display: flex;
+  font-size: 1.25rem;
+}
+.blog__info span {
+  margin: 0rem 1.25rem;
+}
+@media (max-width: 29.9988em) {
+  .blog__info {
+    font-size: 1rem;
+  }
+}
+.blog__category {
+  color: var(--subtitle);
 }/*# sourceMappingURL=style.css.map */
